@@ -7,62 +7,49 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav class="bg-white border-gray-200">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a
-          href="https://www.instagram.com/develoop.co?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          class="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <img
-            src="logo_develoop_tr2.png"
-            class="h-auto max-h-9 0bject-contain"
-            alt="Develoop Logo"
-          />
-        </a>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
+    <nav className="bg-white border-gray-200">
+      <div className="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 items-center">
+        {/* Gambar Logo*/}
+        <div className="ml-0">
+          <a
+            href="https://www.instagram.com/develoop.co?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
+            <img
+              src="logo_develoop_tr2.png"
+              className="h-auto max-h-9 object-contain"
+              alt="Develoop Logo"
             />
-          </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          </a>
+        </div>
+
+        {/*Daftar Menu*/}
+        <div className="hidden w-full md:block md:w-auto mr-0" id="navbar-default">
           <ul
             className={`${
               isOpen ? "block" : "hidden"
             } md:flex items-center space-x-8`}
           >
             <li>
-              <Link href="/" className="text-gray-700 hover:text-black">
+              <Link
+                href="/"
+                className="text-gray-700 hover:text-black text-xl font-['gothambold']"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/services" className="text-gray-700 hover:text-black">
+              <Link
+                href="/services"
+                className="text-gray-700 hover:text-black text-xl font-['gothambold']"
+              >
                 Services
               </Link>
             </li>
             <li>
               <Link
                 href="/portfolio"
-                className="text-gray-700 hover:text-black"
+                className="text-gray-700 hover:text-black text-xl font-['gothambold']"
               >
                 Portfolio
               </Link>
@@ -70,7 +57,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="./contact"
-                className="px-6 py-2 text-white bg-green-500 rounded-full hover:bg-green-600"
+                className="px-6 py-2 text-white bg-green-500 rounded-full hover:bg-green-600 text-xl"
               >
                 Contact
               </Link>

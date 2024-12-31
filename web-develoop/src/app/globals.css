@@ -17,5 +17,30 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:  'GothamLight','GothamMedium',Arial, Helvetica, sans-serif;
+}
+
+/* .navbar-default{
+  margin-right: 0px;
+} */
+
+@font-face{
+  font-family:'GothamLight';
+  src: url('/fonts/Gotham-Font/GothamLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family:'GothamBold';
+  src: url('/fonts/Gotham-Font/GothamBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family:'GothamMedium';
+  src: url('/fonts/Gotham-Font/GothamMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

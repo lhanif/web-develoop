@@ -11,9 +11,18 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         fontFamily:{
-          custom: ['gotham','']
+          'gothamlight': ['GothamLight','sans-serif'],
+          'gothambold': ['GothamBold','sans-serif']
         }
       },
+
+      fontSize:{
+        '60':'60px'
+      },
+
+      backgroundImage:{
+        'hero': "url('/hero_bgwhite2.png')"
+      }
     },
   },
   plugins: [],
