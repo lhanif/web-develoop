@@ -19,21 +19,21 @@ export default function Hero() {
             </strong>
           </h1> */}
 
-          <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">
+          <p className="mt-4 max-w-lg text-emerald-400 sm:text-xl/relaxed">
             Develoop adalah startup di bidang teknologi yang akan mengalahkan semuanya
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4 text-center">
             <a
               href="#"
-              className="block w-full rounded bg-sky-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-sky-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+              className="block w-full rounded bg-emerald-400 px-12 py-3 text-sm font-medium text-white shadow hover:bg-emerald-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
             >
               Reach Us Now!
             </a>
 
             <a
               href="#"
-              className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-sky-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+              className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-emerald-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
             >
               Learn More
             </a>

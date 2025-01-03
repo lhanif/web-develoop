@@ -21,7 +21,7 @@ export default {
       },
 
       backgroundImage:{
-        'hero': "url('/hero_bgwhite2.png')"
+        'hero': "url('/hero_bgwhite.png')"
       }
     },
   },

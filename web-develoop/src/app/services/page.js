@@ -5,6 +5,7 @@ import { useState } from "react";
 import Navbar from "../components/navbar";
 import Card from "../components/card";
 import Carousel from "../components/carousel-services";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
@@ -25,12 +26,7 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="py-20">
-        <div className="w-2/3 sm:w-4/5 md:w-3/4 lg:w-2/3 mx-auto">
-          {/* Mengubah ukuran carousel */}
-          <Carousel />
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }
