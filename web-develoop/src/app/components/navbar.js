@@ -7,8 +7,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-gray-200">
-      <div className="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 items-center">
+    // <nav className="bg-white border-gray-200" >
+      <div className="w-full flex flex-wrap  justify-between mx-auto p-4 items-center bg-white border-gray-200 rounded-bl-lg rounded-br-lg">
         {/* Gambar Logo*/}
         <div className="ml-0">
           <a
@@ -72,7 +72,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/contact"
-                className="px-6 py-2 text-white bg-green-500 rounded-full hover:bg-green-600 text-xl"
+                className="px-6 py-2 text-white bg-emerald-500 rounded-full hover:bg-emerald-600 text-xl"
               >
                 Contact
               </Link>
@@ -80,6 +80,6 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-    </nav>
+    // </nav>
   );
 }
