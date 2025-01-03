@@ -1,11 +1,13 @@
 "use client";
-import { useState } from "react";
+import React from 'react';
 
-export default function Card({ 
+export default function Cards({ 
   imageSrc = "next.svg", 
   title = "Default Title", 
   description = "Default description goes here.", 
-  linkHref = "#" 
+  linkHref = "#", 
+  timestamp = "January 1, 2023", // Tambahkan parameter timestamp
+  location = "Location" // Tambahkan parameter location
 }) {
   // Gambar default dengan rasio 16:9
   const defaultImage = "https://via.placeholder.com/640x360.png?text=Default+Image";
@@ -29,6 +31,9 @@ export default function Card({
             {title}
           </h5>
         </a>
+        {/* Menambahkan timestamp dan location di bawah judul */}
+        <p className="text-sm text-gray-600 mb-1">{timestamp}</p>
+        <p className="text-sm text-gray-600 mb-4">{location}</p>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-5">
           {description}
         </p>
