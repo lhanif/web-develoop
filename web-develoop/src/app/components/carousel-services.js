@@ -7,7 +7,8 @@ export default function Carousel() {
     {
       imageSrc: "https://via.placeholder.com/150",
       title: "IoT Development",
-      description: "This is a dynamically passed description for the card.",
+      description:
+        "This is a dynamically passed description for the card. This is a dynamically passed description for the card. This is a dynamically passed description for the card. This is a dynamically passed description for the card. This is a dynamically passed description for the card.",
       linkHref: "https://example.com",
     },
     {
