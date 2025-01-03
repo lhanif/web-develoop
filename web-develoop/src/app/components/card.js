@@ -7,6 +7,9 @@ export default function Card({
   description = "Default description goes here.", 
   linkHref = "#" 
 }) {
+  // Gambar default dengan rasio 16:9
+  const defaultImage = "https://via.placeholder.com/640x360.png?text=Default+Image";
+
   return (
     <div className="max-w-sm w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href={linkHref}>
@@ -16,6 +19,7 @@ export default function Card({
             className="object-cover w-full h-full" 
             src={imageSrc} 
             alt={title} 
+            onError={(e) => { e.target.onerror = null; e.target.src = defaultImage; }} // Mengatur gambar default jika gagal memuat
           />
         </div>
       </a>
