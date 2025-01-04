@@ -6,8 +6,17 @@ import Navbar from "../components/navbar";
 import Card from "../components/card";
 import Carousel from "../components/carousel-services";
 import Footer from "../components/footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+
 
 export default function Home() {
+  useEffect(() => {
+      AOS.init({})
+  
+    }, [])
   return (
     <div>
       <Navbar />
@@ -28,15 +37,15 @@ export default function Home() {
 
       <div>
         <div class="max-w-4xl mx-auto px-5 mt-16">
-          <div class="text-center">
+          {/* <div class="text-center">
             <h2 class="font-semibold text-3xl">Features you'll love</h2>
             <p class="max-w-md mx-auto mt-2 text-gray-500">
               A responsive documentation template built for everyone who wants
               to create a plugin.
             </p>
-          </div>
+          </div> */}
 
-          <div class="grid md:grid-cols-2 gap-10 mt-10">
+          <div class="grid md:grid-cols-2 gap-10 mt-10" data-aos="fade-up">
             <div class="flex gap-4 items-start">
               <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full">
                 <svg
@@ -56,11 +65,13 @@ export default function Home() {
                 </svg>
               </span>
               <div>
-                <h3 class="font-semibold text-xl">Customizable</h3>
+                <h3 class="font-semibold text-xl">IoT Development</h3>
                 <p class="mt-1 text-gray-500">
                   {" "}
-                  You don't need to be an expert to customize this plugin. Our
-                  code is very readable and well documented.
+                  1. Katakanlah (Muhammad), "Dialah Allah, Yang Maha Esa. 2.
+                  Allah tempat meminta segala sesuatu. 3. (Allah) tidak beranak
+                  dan tidak pula diperanakkan. 4. Dan tidak ada sesuatu yang
+                  setara dengan Dia."
                 </p>
               </div>
             </div>
@@ -84,12 +95,13 @@ export default function Home() {
                 </svg>
               </span>
               <div>
-                <h3 class="font-semibold text-xl">Fully Responsive</h3>
+                <h3 class="font-semibold text-xl">Web Development</h3>
                 <p class="mt-1 text-gray-500">
                   {" "}
-                  With mobile, tablet &amp; desktop support it doesn't matter
-                  what device you're using. This plugin is responsive in all
-                  browsers.{" "}
+                  1. Katakanlah (Muhammad), "Dialah Allah, Yang Maha Esa. 2.
+                  Allah tempat meminta segala sesuatu. 3. (Allah) tidak beranak
+                  dan tidak pula diperanakkan. 4. Dan tidak ada sesuatu yang
+                  setara dengan Dia."
                 </p>
               </div>
             </div>
@@ -113,11 +125,13 @@ export default function Home() {
                 </svg>
               </span>
               <div>
-                <h3 class="font-semibold text-xl">Developer Support</h3>
+                <h3 class="font-semibold text-xl">Mobile App Development</h3>
                 <p class="mt-1 text-gray-500">
                   {" "}
-                  Our plugins are supported by sponsors who provide community
-                  support. Sponsors will get email support on weekdays.
+                  1. Katakanlah (Muhammad), "Dialah Allah, Yang Maha Esa. 2.
+                  Allah tempat meminta segala sesuatu. 3. (Allah) tidak beranak
+                  dan tidak pula diperanakkan. 4. Dan tidak ada sesuatu yang
+                  setara dengan Dia."
                 </p>
               </div>
             </div>
@@ -141,11 +155,13 @@ export default function Home() {
                 </svg>
               </span>
               <div>
-                <h3 class="font-semibold text-xl">Cross Browser</h3>
+                <h3 class="font-semibold text-xl">Robotics</h3>
                 <p class="mt-1 text-gray-500">
                   {" "}
-                  We make sure our plugins are working perfectly with all modern
-                  browsers available such as Chrome, Firefox, Safari.{" "}
+                  1. Katakanlah (Muhammad), "Dialah Allah, Yang Maha Esa. 2.
+                  Allah tempat meminta segala sesuatu. 3. (Allah) tidak beranak
+                  dan tidak pula diperanakkan. 4. Dan tidak ada sesuatu yang
+                  setara dengan Dia."{" "}
                 </p>
               </div>
             </div>
@@ -169,11 +185,13 @@ export default function Home() {
                 </svg>
               </span>
               <div>
-                <h3 class="font-semibold text-xl">Clean Code</h3>
+                <h3 class="font-semibold text-xl">PCB Design</h3>
                 <p class="mt-1 text-gray-500">
                   {" "}
-                  We strictly follow a set of guidelines along with unit tests
-                  to make sure your implementation as easy as possible.{" "}
+                  1. Katakanlah (Muhammad), "Dialah Allah, Yang Maha Esa. 2.
+                  Allah tempat meminta segala sesuatu. 3. (Allah) tidak beranak
+                  dan tidak pula diperanakkan. 4. Dan tidak ada sesuatu yang
+                  setara dengan Dia."{" "}
                 </p>
               </div>
             </div>
@@ -197,18 +215,20 @@ export default function Home() {
                 </svg>
               </span>
               <div>
-                <h3 class="font-semibold text-xl">Well Maintained</h3>
+                <h3 class="font-semibold text-xl">AI Solutions</h3>
                 <p class="mt-1 text-gray-500">
                   {" "}
-                  This templatte is actively maintained by the core plugin team.
-                  We are working on fixing each of the issues reported.
+                  1. Katakanlah (Muhammad), "Dialah Allah, Yang Maha Esa. 2.
+                  Allah tempat meminta segala sesuatu. 3. (Allah) tidak beranak
+                  dan tidak pula diperanakkan. 4. Dan tidak ada sesuatu yang
+                  setara dengan Dia."
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="py-20">
+      <div className="py-20 ">
         <Footer />
       </div>
     </div>
