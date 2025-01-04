@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
         <h1 className="text-4xl font-bold">Welcome to Develoop</h1>
         <p className="mt-4 text-gray-600">Contact</p>
       </div>
+
+      <Footer/>
     </div>
   );
 }
