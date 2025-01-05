@@ -1,11 +1,15 @@
 "use client";
+
+import { useState } from "react";
 import Navbar from "../components/navbar";
-import Cards from "../components/Cards"; // Mengimpor komponen Cards
-import Carousel from "../components/carousel-services";
+import Cards from "../components/Cards"; // Pastikan ini adalah komponen Cards Anda
+import Gallery from "../components/detail"; // Impor komponen Gallery
 import Footer from "../components/footer";
 
 export default function Portfolio() {
-  // Contoh data untuk kartu
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [selectedGallery, setSelectedGallery] = useState(null);
+
   const cardsData = [
     {
       id: 1,
@@ -13,70 +17,52 @@ export default function Portfolio() {
       title: "Card Title 1",
       description: "Description for card 1.",
       linkHref: "#",
-      timestamp: "January 1, 2023", // Tambahkan timestamp
-      location: "Location 1" // Tambahkan location
+      timestamp: "January 1, 2023",
+      location: "Location 1",
+      images: [
+        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
+        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp",
+        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp",
+        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"
+      ],
     },
     {
       id: 2,
-      imageSrc: "https://via.placeholder.com/640x360.png?text=Default+Image",
+      imageSrc: "loop.svg",
       title: "Card Title 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      description: "Description for card 2.",
       linkHref: "#",
-      timestamp: "February 1, 2023", // Tambahkan timestamp
-      location: "Location 2" // Tambahkan location
+      timestamp: "January 2, 2023",
+      location: "Location 2",
+      images: ["image1.jpg", "image2.jpg"],
     },
-    {
-      id: 3,
-      imageSrc: "https://via.placeholder.com/640x360.png?text=Default+Image",
-      title: "Card Title 3",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      linkHref: "#",
-      timestamp: "March 1, 2023", // Tambahkan timestamp
-      location: "Location 3" // Tambahkan location
-    },
-    {
-      id: 4,
-      imageSrc: "https://via.placeholder.com/640x360.png?text=Default+Image",
-      title: "Card Title 4",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      linkHref: "#",
-      timestamp: "April 1, 2023", // Tambahkan timestamp
-      location: "Location 4" // Tambahkan location
-    },
-    {
-      id: 5,
-      imageSrc: "https://via.placeholder.com/640x360.png?text=Default+Image",
-      title: "Card Title 5",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      linkHref: "#",
-      timestamp: "May 1, 2023", // Tambahkan timestamp
-      location: "Location 5" // Tambahkan location
-    },
-    {
-      id: 6,
-      imageSrc: "https://via.placeholder.com/640x360.png?text=Default+Image",
-      title: "Card Title 6",
-      description: "Description for card 6.",
-      linkHref: "#",
-      timestamp: "June 1, 2023", // Tambahkan timestamp
-      location: "Location 6" // Tambahkan location
-    },
+    // Tambahkan data kartu lainnya sesuai kebutuhan
   ];
+
+  const handleReadMore = (gallery) => {
+    setSelectedGallery(gallery);
+    setIsGalleryOpen(true);
+  };
+
+  const handleExit = () => {
+    setIsGalleryOpen(false);
+    setSelectedGallery(null);
+  };
+
+  const handleOverlayClick = (e) => {
+    // Cek apakah klik terjadi di luar galeri
+    if (e.target === e.currentTarget) {
+      handleExit();
+    }
+  };
 
   return (
     <div>
       <Navbar />
-      <header
-        className="relative bg-cover bg-center text-white py-16"
-        style={{
-          backgroundImage: "url('bg-head.jpg')",
-        }}
-      >
+      <header className="relative bg-cover bg-center text-white py-16" style={{ backgroundImage: "url('bg-head.jpg')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-md"></div>
         <div className="relative z-10 text-center">
-          <h1 className="text-4xl font-extrabold sm:text-5xl lg:text-6xl">
-            OUR PORTFOLIO
-          </h1>
+          <h1 className="text-4xl font-extrabold sm:text-5xl lg:text-6xl">OUR PORTFOLIO</h1>
         </div>
       </header>
 
@@ -90,13 +76,29 @@ export default function Portfolio() {
                 title={card.title}
                 description={card.description}
                 linkHref={card.linkHref}
-                timestamp={card.timestamp} // Kirimkan timestamp
-                location={card.location} // Kirimkan location
+                timestamp={card.timestamp}
+                location={card.location}
+                onReadMore={() => handleReadMore(card)} // Pass the card data
               />
             ))}
           </div>
         </div>
       </div>
+
+      {isGalleryOpen && selectedGallery && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50" onClick={handleOverlayClick}>
+          <div onClick={(e) => e.stopPropagation()}> {/* Mencegah klik di dalam galeri menutup galeri */}
+            <Gallery
+              title={selectedGallery.title}
+              timestamp={selectedGallery.timestamp}
+              location={selectedGallery.location}
+              images={selectedGallery.images}
+              description={selectedGallery.description}
+              onExit={handleExit}
+            />
+          </div>
+        </div>
+      )}
 
       <Footer />
     </div>

@@ -39,15 +39,6 @@ export default function Services() {
         </div>
       </header>
       
-      <Gallery
-      title="Juara 2 Kategori Presentasi PIMNAS Ke-37"
-      timestamp="January 1, 2023"
-      location="Universitas Airlangga"
-      images={images}
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      onExit={handleExit}
-    />
-
       <Footer />
     </div>
   );

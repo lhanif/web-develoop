@@ -3,14 +3,13 @@ import React from 'react';
 
 const Gallery = ({ title, timestamp, location, images, description, onExit }) => {
   return (
-    
-    <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
-        <link
+    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+
+          <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
           />
-
-      <div className="bg-white rounded-lg shadow-md p-6 relative">
+      <div className="bg-white rounded-lg shadow-md p-6 relative max-w-4xl w-full h-auto max-h-[80vh] overflow-y-auto scrollbar-hidden mx-4 sm:mx-8 lg:mx-16"> {/* Menambahkan margin fleksibel */}
         {/* Tombol Exit */}
         <button
           onClick={onExit}

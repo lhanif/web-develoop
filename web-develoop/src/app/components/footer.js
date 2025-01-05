@@ -35,7 +35,7 @@ export default function Footer() {
                   href="#"
                   className="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm"
                 >
-                  Our Services
+                  Services
                 </a>
               </li>
               <li>
@@ -43,7 +43,7 @@ export default function Footer() {
                   href="#"
                   className="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm"
                 >
-                  Latest Project
+                  Portfolio
                 </a>
               </li>
               <li>
@@ -51,7 +51,7 @@ export default function Footer() {
                   href="#"
                   className="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm"
                 >
-                  Team Portfolio
+                  
                 </a>
               </li>
             </ul>
@@ -139,7 +139,7 @@ export default function Footer() {
                     ></path>
                   </svg>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/develoop.co/"
                     className="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm"
                   >
                     Instagram

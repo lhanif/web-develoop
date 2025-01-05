@@ -1,32 +1,30 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Footer from "./components/footer";
 import Carousel from "./components/carousel-services";
+import Head from "next/head"; // Impor Head dari Next.js
 
-import { AOSInit } from "aos";
-
-export default function Home({component, pageProps}) {
+export default function Home({ component, pageProps }) {
   useEffect(() => {
-    AOS.init({})
+    AOS.init();
+  }, []);
 
-  }, [])
   return (
     <div>
-      <head>
+      <Head>
         <title>Develoop</title>
         <meta name="description" content="Ini adalah halaman beranda." />
-      </head>
+      </Head>
       <nav className="sticky top-0 z-50">
         <Navbar />
       </nav>
       <div className="-mt-1.5">
-        <Hero data-aos="fade-up"/>
+        <Hero data-aos="fade-up" />
       </div>
       <section className="py-20" data-aos="fade-up">
         <header className="relative z-10 text-center">
