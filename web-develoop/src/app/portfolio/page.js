@@ -5,39 +5,12 @@ import Navbar from "../components/navbar";
 import Cards from "../components/Cards"; // Pastikan ini adalah komponen Cards Anda
 import Gallery from "../components/detail"; // Impor komponen Gallery
 import Footer from "../components/footer";
+import Head from "next/head";
+import cardsData from "../data/data-portfolio"; // Impor data kartu
 
 export default function Portfolio() {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [selectedGallery, setSelectedGallery] = useState(null);
-
-  const cardsData = [
-    {
-      id: 1,
-      imageSrc: "loop.svg",
-      title: "Card Title 1",
-      description: "Description for card 1.",
-      linkHref: "#",
-      timestamp: "January 1, 2023",
-      location: "Location 1",
-      images: [
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp",
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp",
-        "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"
-      ],
-    },
-    {
-      id: 2,
-      imageSrc: "loop.svg",
-      title: "Card Title 2",
-      description: "Description for card 2.",
-      linkHref: "#",
-      timestamp: "January 2, 2023",
-      location: "Location 2",
-      images: ["image1.jpg", "image2.jpg"],
-    },
-    // Tambahkan data kartu lainnya sesuai kebutuhan
-  ];
 
   const handleReadMore = (gallery) => {
     setSelectedGallery(gallery);
@@ -58,6 +31,9 @@ export default function Portfolio() {
 
   return (
     <div>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
       <header className="relative bg-cover bg-center text-white py-16" style={{ backgroundImage: "url('bg-head.jpg')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-md"></div>

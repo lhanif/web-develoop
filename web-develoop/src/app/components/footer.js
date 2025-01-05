@@ -16,23 +16,25 @@ export default function Footer() {
               className="mt-8 h-auto max-h-8 object-contain ms"
               alt="Develoop Logo"
             />
-            <p className="text-gray-600 text-sm mt-2 ms-8 me-7 text-justify">
-              Develoop adalah sebuah perusahaan rintisan yang menawarkan jasa
-              pembuatan produk digital, sistem IoT terintegrasi, dan produk
-              inovatif lainnya. Dengan menggabungkan kreativitas, teknologi
-              mutakhir, dan pemahaman mendalam akan kebutuhan bisnis Anda, kami
-              menciptakan solusi digital yang berkualitas.
+            <p className="text-gray-600 text-sm mt-2 ms-7 me-7 text-justify">
+            Develoop adalah perusahaan rintisan di bidang system development yang menyediakan 
+            layanan pembuatan produk digital, sistem IoT terintegrasi, dan solusi teknologi lainnya. 
+            Dengan pendekatan personal dan berfokus pada kebutuhan pelanggan, kami menciptakan solusi inovatif 
+            yang mendukung pertumbuhan bisnis Anda. 
             </p>
+
+            <p className="font-bold text-gray-800 text-sm mt-2 me-7 ms-7">DREAM IT, WE'LL BUILT IT.</p>
+            
           </div>
 
           <div className="grid justify-between grid-cols-3 gap-1 mt-10 ms-8 me-2">
             <ul>
-              <p className="block mb-1 text-base font-semibold  text-slate-800">
+              <a href="\" className="block mb-1 text-base font-semibold text-slate-800">
                 Home
-              </p>
+              </a>
               <li>
                 <a
-                  href="#"
+                  href="\services"
                   className="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm"
                 >
                   Services
@@ -40,7 +42,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="\portfolio"
                   className="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm"
                 >
                   Portfolio
@@ -57,9 +59,9 @@ export default function Footer() {
             </ul>
 
             <ul>
-              <p className="block mb-0 text-base font-semibold  text-slate-800">
+              <a className="block mb-0 text-base font-semibold  text-slate-800">
                 FAQ
-              </p>
+              </a>
               <li>
                 <a
                   href="#"
@@ -77,13 +79,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <p className="block text-base font-semibold  text-slate-800">
+                <a href="\about" className="block text-base font-semibold  text-slate-800">
                   About Us
-                </p>
+                </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#team-members"
                   className="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm"
                 >
                   Team Members
