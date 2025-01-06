@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Navbar from "../components/navbar";
-import Cards from "../components/Cards"; // Pastikan ini adalah komponen Cards Anda
+import Cards from "../components/cards"; // Pastikan ini adalah komponen Cards Anda
 import Gallery from "../components/detail"; // Impor komponen Gallery
 import Footer from "../components/footer";
 import Head from "next/head";

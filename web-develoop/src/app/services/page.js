@@ -228,9 +228,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="py-20 ">
         <Footer />
-      </div>
     </div>
   );
 }

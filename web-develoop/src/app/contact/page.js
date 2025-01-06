@@ -1,20 +1,17 @@
-'use client'
+"use client";
 
 import { useState } from "react";
 
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import Form from "../components/form-order";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white">
       <Navbar />
-      <div className="py-20 text-center">
-        <h1 className="text-4xl font-bold">Welcome to Develoop</h1>
-        <p className="mt-4 text-gray-600">Contact</p>
-      </div>
-
-      <Footer/>
+      <Form />
+      <Footer />
     </div>
   );
-}
+} 

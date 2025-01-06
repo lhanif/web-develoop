@@ -7,12 +7,12 @@ export default function Footer() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <footer className="relative w-full mb-20 bg-white">
+    <footer className="relative w-full mb-0 bg-white">
       <div className="w-full px-8 mx-auto max-w-7xl">
         <div className="grid justify-between grid-cols-1 gap-4 md:grid-cols-2">
           <div>
             <img
-              src="logo_develoop_tr2.png"
+              src="logo_develoop_tr2.png" 
               className="mt-8 h-auto max-h-8 object-contain ms"
               alt="Develoop Logo"
             />
@@ -23,7 +23,7 @@ export default function Footer() {
             yang mendukung pertumbuhan bisnis Anda. 
             </p>
 
-            <p className="font-bold text-gray-800 text-sm mt-2 me-7 ms-7">DREAM IT, WE'LL BUILT IT.</p>
+            <p className="font-bold text-gray-800 text-sm mt-2 me-7 ms-7">DREAM IT, WE'LL BUILD IT.</p>
             
           </div>
 

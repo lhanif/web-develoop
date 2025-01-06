@@ -61,8 +61,9 @@ export default function Home({ component, pageProps }) {
           </h1>
         </header>
       </section>
-
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
