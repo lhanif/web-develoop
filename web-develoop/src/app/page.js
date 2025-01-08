@@ -26,7 +26,8 @@ export default function Home({ component, pageProps }) {
       <div className="-mt-1.5">
         <Hero data-aos="fade-up" />
       </div>
-      <section className="py-20" data-aos="fade-up">
+      
+      {/* <section className="py-20" data-aos="fade-up">
         <header className="relative z-10 text-center">
           <h1 className="text-4xl font-extrabold sm:text-5xl lg:text-6xl">
             OUR SERVICES
@@ -34,11 +35,10 @@ export default function Home({ component, pageProps }) {
         </header>
         <div className="py-20">
           <div className="w-2/3 sm:w-4/5 md:w-3/4 lg:w-2/3 mx-auto">
-            {/* Mengubah ukuran carousel */}
             <Carousel />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-20" data-aos="fade-up">
         <header className="relative z-10 text-center">
