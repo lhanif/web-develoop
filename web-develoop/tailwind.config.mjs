@@ -10,14 +10,16 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        fontFamily:{
-          'gothamlight': ['GothamLight','sans-serif'],
-          'gothambold': ['GothamBold','sans-serif']
-        }
+        develoop: "#01c38e"
+
       },
 
       fontSize:{
         '60':'60px'
+      },
+      fontFamily:{
+        'gothamlight': ['GothamLight','sans-serif'],
+        'gothambold': ['GothamBold','sans-serif']
       },
 
       backgroundImage:{

@@ -1,47 +1,10 @@
 "use client";
 import { useState } from "react";
 import Card from "../components/card";
+import DataPorto from "../data/data-portfolio";
 
 export default function Carousel() {
-  const cards = [
-    {
-      imageSrc: "https://via.placeholder.com/150",
-      title: "IoT Development",
-      description:
-        "This is a dynamically passed description for the card. This is a dynamically passed description for the card. This is a dynamically passed description for the card. This is a dynamically passed description for the card. This is a dynamically passed description for the card.",
-      linkHref: "https://example.com",
-    },
-    {
-      imageSrc: "https://via.placeholder.com/150",
-      title: "AI Solutions",
-      description: "Explore AI solutions that help businesses grow.",
-      linkHref: "https://example.com",
-    },
-    {
-      imageSrc: "https://via.placeholder.com/150",
-      title: "Web Development",
-      description: "Build responsive and robust web applications.",
-      linkHref: "https://example.com",
-    },
-    {
-      imageSrc: "https://via.placeholder.com/150",
-      title: "Mobile Apps",
-      description: "Design and develop native mobile applications.",
-      linkHref: "https://example.com",
-    },
-    {
-      imageSrc: "https://via.placeholder.com/150",
-      title: "Mobile Apps",
-      description: "Design and develop native mobile applications.",
-      linkHref: "https://example.com",
-    },
-    {
-      imageSrc: "https://via.placeholder.com/150",
-      title: "Mobile Apps",
-      description: "Design and develop native mobile applications.",
-      linkHref: "https://example.com",
-    },
-  ];
+  const cards = DataPorto;
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
