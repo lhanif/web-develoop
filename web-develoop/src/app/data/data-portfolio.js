@@ -28,7 +28,7 @@ const cardsData = [
     {
       id: 3,
       imageSrc: "/image/novanda.png",
-      title: "Zakwoow Invitation Card – Grand Blooming Party",
+      title: "Zakwoow Invitation Card",
       description: "Develoop berperan sebagai mitra teknologi dalam pembuatan undangan untuk acara Grand Blooming Party yang diselenggarakan oleh Zakwoow Store. Kami mengembangkan sebuah E-Invitation berbasis web yang dirancang untuk memberikan pengalaman undangan yang interaktif dan menarik. Undangan ini memiliki desain yang telah disesuaikan dengan tema acara, sehingga memberikan kesan yang lebih personal dan profesional. Dengan fitur web yang mudah diakses, tamu undangan dapat langsung menerima informasi acara dengan cara yang lebih modern dan efisien, tanpa perlu mengcustomisasi undangan tersebut.",
       linkHref: "#",
       timestamp: "Desember 2024",

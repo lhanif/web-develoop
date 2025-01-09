@@ -33,141 +33,185 @@ export default function Home() {
           </h1>
         </div>
       </header>
-
       <div className="bg-white">
-        <div className="relative z-10 text-center bg-white p-10 mr-1 mb-3 shadow-xl rounded-lg flex items-center flex-col">
-          <img
-            src="file.svg"
-            alt="Deskripsi Gambar"
-            className="w-16 h-16 mb-4"
-          />
-          <h1 className="text-black font-bold text-xl mb-2">Web Development</h1>
-          <p className="text-black text-justify">
-            Jasa web development adalah layanan yang menyediakan pembuatan,
-            desain, pengembangan, dan pemeliharaan situs web atau aplikasi web.
-            Layanan ini mencakup berbagai tahap, mulai dari perencanaan dan
-            desain antarmuka pengguna (UI), pengembangan fungsionalitas
-            menggunakan berbagai bahasa pemrograman (seperti HTML, CSS,
-            JavaScript, PHP, Python), hingga pengujian dan peluncuran situs. Web
-            development juga mencakup pengelolaan dan optimasi performa,
-            keamanan, serta pembaruan situs secara berkala untuk memastikan
-            kinerja yang optimal. Tujuan dari jasa web development adalah untuk
-            menciptakan situs web yang efektif, responsif, dan user-friendly
-            untuk memenuhi kebutuhan bisnis atau individu.
-          </p>
-        </div>
+        {/* WEB DEVELOPMENT */}
+        <section class="flex flex-col md:flex-row gap-8 p-8 ml-20 mr-20">
+          <div class="flex-[1] ml-10 mr-10">
+            <img
+              src="web-dev.jpg"
+              alt="Deskripsi Gambar"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
 
-        <div className="relative z-10 text-center bg-white p-10 mr-1 mb-3 shadow-xl rounded-lg flex items-center flex-col">
-          <img
-            src="file.svg"
-            alt="Deskripsi Gambar"
-            className="w-16 h-16 mb-4"
-          />
-          <h1 className="text-black font-bold text-xl mb-2">Web Development</h1>
-          <p className="text-black text-justify">
-            Jasa web development adalah layanan yang menyediakan pembuatan,
-            desain, pengembangan, dan pemeliharaan situs web atau aplikasi web.
-            Layanan ini mencakup berbagai tahap, mulai dari perencanaan dan
-            desain antarmuka pengguna (UI), pengembangan fungsionalitas
-            menggunakan berbagai bahasa pemrograman (seperti HTML, CSS,
-            JavaScript, PHP, Python), hingga pengujian dan peluncuran situs. Web
-            development juga mencakup pengelolaan dan optimasi performa,
-            keamanan, serta pembaruan situs secara berkala untuk memastikan
-            kinerja yang optimal. Tujuan dari jasa web development adalah untuk
-            menciptakan situs web yang efektif, responsif, dan user-friendly
-            untuk memenuhi kebutuhan bisnis atau individu.
-          </p>
-        </div>
+          <div className="flex-[2]">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">
+              Web Development
+            </h2>
+            <p className="text-gray-600 mb-4 text-justify">
+              Jasa web development adalah layanan yang menyediakan pembuatan,
+              desain, pengembangan, dan pemeliharaan situs web atau aplikasi
+              web. Layanan ini mencakup berbagai tahap, mulai dari perencanaan
+              dan desain antarmuka pengguna (UI), pengembangan fungsionalitas
+              menggunakan berbagai bahasa pemrograman (seperti HTML, CSS,
+              JavaScript, PHP, Python), hingga pengujian dan peluncuran situs.
+              Web development juga mencakup pengelolaan dan optimasi performa,
+              keamanan, serta pembaruan situs secara berkala untuk memastikan
+              kinerja yang optimal. Tujuan dari jasa web development adalah
+              untuk menciptakan situs web yang efektif, responsif, dan
+              user-friendly untuk memenuhi kebutuhan bisnis atau individu.
+            </p>
+          </div>
+        </section>
 
-        <div className="relative z-10 text-center bg-white p-10 mr-1 mb-3 shadow-xl rounded-lg flex items-center flex-col">
-          <img
-            src="file.svg"
-            alt="Deskripsi Gambar"
-            className="w-16 h-16 mb-4"
-          />
-          <h1 className="text-black font-bold text-xl mb-2">Web Development</h1>
-          <p className="text-black text-justify">
-            Jasa web development adalah layanan yang menyediakan pembuatan,
-            desain, pengembangan, dan pemeliharaan situs web atau aplikasi web.
-            Layanan ini mencakup berbagai tahap, mulai dari perencanaan dan
-            desain antarmuka pengguna (UI), pengembangan fungsionalitas
-            menggunakan berbagai bahasa pemrograman (seperti HTML, CSS,
-            JavaScript, PHP, Python), hingga pengujian dan peluncuran situs. Web
-            development juga mencakup pengelolaan dan optimasi performa,
-            keamanan, serta pembaruan situs secara berkala untuk memastikan
-            kinerja yang optimal. Tujuan dari jasa web development adalah untuk
-            menciptakan situs web yang efektif, responsif, dan user-friendly
-            untuk memenuhi kebutuhan bisnis atau individu.
-          </p>
-        </div>
+        {/* IOT DEVELOPMENT */}
+        <section class="flex flex-col md:flex-row gap-8 p-6 bg-gray-100">
+          <div className="flex-[2]">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">
+              IoT Development
+            </h2>
+            <p className="text-gray-600 mb-4">
+              Jasa web development adalah layanan yang menyediakan pembuatan,
+              desain, pengembangan, dan pemeliharaan situs web atau aplikasi
+              web. Layanan ini mencakup berbagai tahap, mulai dari perencanaan
+              dan desain antarmuka pengguna (UI), pengembangan fungsionalitas
+              menggunakan berbagai bahasa pemrograman (seperti HTML, CSS,
+              JavaScript, PHP, Python), hingga pengujian dan peluncuran situs.
+              Web development juga mencakup pengelolaan dan optimasi performa,
+              keamanan, serta pembaruan situs secara berkala untuk memastikan
+              kinerja yang optimal. Tujuan dari jasa web development adalah
+              untuk menciptakan situs web yang efektif, responsif, dan
+              user-friendly untuk memenuhi kebutuhan bisnis atau individu.
+            </p>
+          </div>
 
-        <div className="relative z-10 text-center bg-white p-10 mr-1 mb-3 shadow-xl rounded-lg flex items-center flex-col">
-          <img
-            src="file.svg"
-            alt="Deskripsi Gambar"
-            className="w-16 h-16 mb-4"
-          />
-          <h1 className="text-black font-bold text-xl mb-2">Web Development</h1>
-          <p className="text-black text-justify">
-            Jasa web development adalah layanan yang menyediakan pembuatan,
-            desain, pengembangan, dan pemeliharaan situs web atau aplikasi web.
-            Layanan ini mencakup berbagai tahap, mulai dari perencanaan dan
-            desain antarmuka pengguna (UI), pengembangan fungsionalitas
-            menggunakan berbagai bahasa pemrograman (seperti HTML, CSS,
-            JavaScript, PHP, Python), hingga pengujian dan peluncuran situs. Web
-            development juga mencakup pengelolaan dan optimasi performa,
-            keamanan, serta pembaruan situs secara berkala untuk memastikan
-            kinerja yang optimal. Tujuan dari jasa web development adalah untuk
-            menciptakan situs web yang efektif, responsif, dan user-friendly
-            untuk memenuhi kebutuhan bisnis atau individu.
-          </p>
-        </div>
+          <div class="flex-[1]">
+            <img
+              src="web-dev.jpg"
+              alt="Deskripsi Gambar"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+        </section>
 
-        <div className="relative z-10 text-center bg-white p-10 mr-1 mb-3 shadow-xl rounded-lg flex items-center flex-col">
-          <img
-            src="file.svg"
-            alt="Deskripsi Gambar"
-            className="w-16 h-16 mb-4"
-          />
-          <h1 className="text-black font-bold text-xl mb-2">Web Development</h1>
-          <p className="text-black text-justify">
-            Jasa web development adalah layanan yang menyediakan pembuatan,
-            desain, pengembangan, dan pemeliharaan situs web atau aplikasi web.
-            Layanan ini mencakup berbagai tahap, mulai dari perencanaan dan
-            desain antarmuka pengguna (UI), pengembangan fungsionalitas
-            menggunakan berbagai bahasa pemrograman (seperti HTML, CSS,
-            JavaScript, PHP, Python), hingga pengujian dan peluncuran situs. Web
-            development juga mencakup pengelolaan dan optimasi performa,
-            keamanan, serta pembaruan situs secara berkala untuk memastikan
-            kinerja yang optimal. Tujuan dari jasa web development adalah untuk
-            menciptakan situs web yang efektif, responsif, dan user-friendly
-            untuk memenuhi kebutuhan bisnis atau individu.
-          </p>
-        </div>
+        {/* MOBILE APP DEVELOPMENT */}
+        <section class="flex flex-col md:flex-row gap-8 p-6 bg-gray-100">
+          <div class="flex-[1]">
+            <img
+              src="web-dev.jpg"
+              alt="Deskripsi Gambar"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
 
-        <div className="relative z-10 text-center bg-white p-10 mr-1 mb-3 shadow-xl rounded-lg flex items-center flex-col">
-          <img
-            src="file.svg"
-            alt="Deskripsi Gambar"
-            className="w-16 h-16 mb-4"
-          />
-          <h1 className="text-black font-bold text-xl mb-2">Web Development</h1>
-          <p className="text-black text-justify">
-            Jasa web development adalah layanan yang menyediakan pembuatan,
-            desain, pengembangan, dan pemeliharaan situs web atau aplikasi web.
-            Layanan ini mencakup berbagai tahap, mulai dari perencanaan dan
-            desain antarmuka pengguna (UI), pengembangan fungsionalitas
-            menggunakan berbagai bahasa pemrograman (seperti HTML, CSS,
-            JavaScript, PHP, Python), hingga pengujian dan peluncuran situs. Web
-            development juga mencakup pengelolaan dan optimasi performa,
-            keamanan, serta pembaruan situs secara berkala untuk memastikan
-            kinerja yang optimal. Tujuan dari jasa web development adalah untuk
-            menciptakan situs web yang efektif, responsif, dan user-friendly
-            untuk memenuhi kebutuhan bisnis atau individu.
-          </p>
-        </div>
+          <div className="flex-[2]">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">
+              Mobile App Development
+            </h2>
+            <p className="text-gray-600 mb-4">
+              Jasa web development adalah layanan yang menyediakan pembuatan,
+              desain, pengembangan, dan pemeliharaan situs web atau aplikasi
+              web. Layanan ini mencakup berbagai tahap, mulai dari perencanaan
+              dan desain antarmuka pengguna (UI), pengembangan fungsionalitas
+              menggunakan berbagai bahasa pemrograman (seperti HTML, CSS,
+              JavaScript, PHP, Python), hingga pengujian dan peluncuran situs.
+              Web development juga mencakup pengelolaan dan optimasi performa,
+              keamanan, serta pembaruan situs secara berkala untuk memastikan
+              kinerja yang optimal. Tujuan dari jasa web development adalah
+              untuk menciptakan situs web yang efektif, responsif, dan
+              user-friendly untuk memenuhi kebutuhan bisnis atau individu.
+            </p>
+          </div>
+        </section>
+
+        {/* PCB DESIGN */}
+        <section class="flex flex-col md:flex-row gap-8 p-6 bg-gray-100">
+          <div className="flex-[2]">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">
+              PCB Design
+            </h2>
+            <p className="text-gray-600 mb-4">
+              Jasa web development adalah layanan yang menyediakan pembuatan,
+              desain, pengembangan, dan pemeliharaan situs web atau aplikasi
+              web. Layanan ini mencakup berbagai tahap, mulai dari perencanaan
+              dan desain antarmuka pengguna (UI), pengembangan fungsionalitas
+              menggunakan berbagai bahasa pemrograman (seperti HTML, CSS,
+              JavaScript, PHP, Python), hingga pengujian dan peluncuran situs.
+              Web development juga mencakup pengelolaan dan optimasi performa,
+              keamanan, serta pembaruan situs secara berkala untuk memastikan
+              kinerja yang optimal. Tujuan dari jasa web development adalah
+              untuk menciptakan situs web yang efektif, responsif, dan
+              user-friendly untuk memenuhi kebutuhan bisnis atau individu.
+            </p>
+          </div>
+
+          <div class="flex-[1]">
+            <img
+              src="web-dev.jpg"
+              alt="Deskripsi Gambar"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+        </section>
+
+        {/* ROBOTICS */}
+        <section class="flex flex-col md:flex-row gap-8 p-6 bg-gray-100">
+          <div class="flex-[1]">
+            <img
+              src="web-dev.jpg"
+              alt="Deskripsi Gambar"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+
+          <div className="flex-[2]">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">Robotics</h2>
+            <p className="text-gray-600 mb-4">
+              Jasa web development adalah layanan yang menyediakan pembuatan,
+              desain, pengembangan, dan pemeliharaan situs web atau aplikasi
+              web. Layanan ini mencakup berbagai tahap, mulai dari perencanaan
+              dan desain antarmuka pengguna (UI), pengembangan fungsionalitas
+              menggunakan berbagai bahasa pemrograman (seperti HTML, CSS,
+              JavaScript, PHP, Python), hingga pengujian dan peluncuran situs.
+              Web development juga mencakup pengelolaan dan optimasi performa,
+              keamanan, serta pembaruan situs secara berkala untuk memastikan
+              kinerja yang optimal. Tujuan dari jasa web development adalah
+              untuk menciptakan situs web yang efektif, responsif, dan
+              user-friendly untuk memenuhi kebutuhan bisnis atau individu.
+            </p>
+          </div>
+        </section>
+
+        {/* AI Solutions */}
+        <section class="flex flex-col md:flex-row gap-8 p-6 bg-gray-100">
+          <div className="flex-[2]">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">
+              AI Solutions
+            </h2>
+            <p className="text-gray-600 mb-4">
+              Jasa web development adalah layanan yang menyediakan pembuatan,
+              desain, pengembangan, dan pemeliharaan situs web atau aplikasi
+              web. Layanan ini mencakup berbagai tahap, mulai dari perencanaan
+              dan desain antarmuka pengguna (UI), pengembangan fungsionalitas
+              menggunakan berbagai bahasa pemrograman (seperti HTML, CSS,
+              JavaScript, PHP, Python), hingga pengujian dan peluncuran situs.
+              Web development juga mencakup pengelolaan dan optimasi performa,
+              keamanan, serta pembaruan situs secara berkala untuk memastikan
+              kinerja yang optimal. Tujuan dari jasa web development adalah
+              untuk menciptakan situs web yang efektif, responsif, dan
+              user-friendly untuk memenuhi kebutuhan bisnis atau individu.
+            </p>
+          </div>
+
+          <div class="flex-[1]">
+            <img
+              src="web-dev.jpg"
+              alt="Deskripsi Gambar"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+        </section>
       </div>
-
       <Footer />
     </div>
   );

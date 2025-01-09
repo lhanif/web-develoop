@@ -10,7 +10,7 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
         <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <img src="loop.svg" className="h-40"/>
+          <img src="loop.svg" className="h-40" />
           {/* <h1 className="text-3xl font-extrabold text-white sm:text-5xl">
             Let us find your
             <strong className="block font-extrabold text-rose-500">
@@ -19,8 +19,9 @@ export default function Hero() {
             </strong>
           </h1> */}
 
-          <p className="mt-4 max-w-lg text-emerald-400 sm:text-xl/relaxed">
-            Develoop adalah startup di bidang teknologi yang akan mengalahkan semuanya
+          <p className="mt-4 max-w-lg text-black sm:text-xl/relaxed">
+            Develoop adalah startup di bidang teknologi yang akan mengalahkan
+            semuanya
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4 text-center">
