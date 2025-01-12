@@ -11,7 +11,7 @@ export default function Card({
   const defaultImage = "https://via.placeholder.com/640x360.png?text=Default+Image";
 
   return (
-    <div className="max-w-sm w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="max-w-sm w-full bg-white border border-gray-200 rounded-lg shadow-xl">
       <a href={linkHref}>
         {/* Container gambar dengan ukuran tetap */}
         <div className="h-48 w-full overflow-hidden rounded-t-lg bg-gray-200">
@@ -25,16 +25,16 @@ export default function Card({
       </a>
       <div className="p-5">
         <a href={linkHref}>
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
             {title}
           </h5>
         </a>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-5">
+        <p className="mb-3 font-normal text-gray-700 line-clamp-5">
           {description}
         </p>
         <a
           href={linkHref}
-          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-develoop rounded-lg hover:bg-emerald-600 focus:ring-4 focus:outline-none focus:ring-blue-300 "
         >
           Read more
           <svg

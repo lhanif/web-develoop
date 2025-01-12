@@ -42,7 +42,7 @@ export default function Carousel() {
 
       {/* Prev/Next buttons */}
       <button
-        className="absolute top-1/2 left-0 z-10 text-white bg-black/50 p-2 rounded-full"
+        className="absolute top-1/2 left-0 z-10 text-white bg-emerald-500 p-2 rounded-full"
         onClick={prevSlide}
       >
         &lt;
