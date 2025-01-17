@@ -16,7 +16,9 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <Navbar />
+      <nav className="sticky top-0 z-50">
+        <Navbar />
+      </nav>
       <header
         className="relative bg-cover bg-center text-white py-16"
         style={{
