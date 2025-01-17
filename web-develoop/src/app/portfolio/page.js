@@ -34,11 +34,18 @@ export default function Portfolio() {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <header className="relative bg-cover bg-center text-white py-16" style={{ backgroundImage: "url('bg-head.jpg')" }}>
+      <nav className="sticky top-0 z-50">
+        <Navbar />
+      </nav>
+      <header
+        className="relative bg-cover bg-center text-white py-16"
+        style={{ backgroundImage: "url('bg-head.jpg')" }}
+      >
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-md"></div>
         <div className="relative z-10 text-center">
-          <h1 className="text-4xl font-extrabold sm:text-5xl lg:text-6xl">OUR PORTFOLIO</h1>
+          <h1 className="text-4xl font-extrabold sm:text-5xl lg:text-6xl">
+            OUR PORTFOLIO
+          </h1>
         </div>
       </header>
 
@@ -62,8 +69,13 @@ export default function Portfolio() {
       </div>
 
       {isGalleryOpen && selectedGallery && (
-        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50" onClick={handleOverlayClick}>
-          <div onClick={(e) => e.stopPropagation()}> {/* Mencegah klik di dalam galeri menutup galeri */}
+        <div
+          className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50"
+          onClick={handleOverlayClick}
+        >
+          <div onClick={(e) => e.stopPropagation()}>
+            {" "}
+            {/* Mencegah klik di dalam galeri menutup galeri */}
             <Gallery
               title={selectedGallery.title}
               timestamp={selectedGallery.timestamp}

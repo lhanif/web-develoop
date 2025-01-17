@@ -8,12 +8,14 @@ import Form from "../components/form-order";
 export default function Home() {
   return (
     <div className="bg-white">
-      <Navbar />
+      <nav className="sticky top-0 z-50">
+        <Navbar />
+      </nav>
       {/* Overlay gelap */}
       <div className="relative z-10 text-center bg-emerald-400 p-10 shadow-xl">
         <h1 className="text-4xl font-extrabold sm:text-5xl lg:text-6xl mb-10">
           CONNECT WITH US
-        </h1> 
+        </h1>
         {/* <p className="text-lg text-white mb-4">
           Follow us on our social media platforms:
         </p> */}
