@@ -41,4 +41,12 @@ app.prepare().then(() => {
   });
 
   // Di Vercel, server tidak perlu mendengarkan port, karena Vercel akan menangani ini secara otomatis.
+  if (dev) {
+    // Hanya jalankan server secara lokal saat dalam mode development
+    const port = process.env.PORT || 3001;
+    server.listen(port, (err) => {
+      if (err) throw err;
+      console.log(`> Server running on http://localhost:${port}`);
+    });
+  }
 });
