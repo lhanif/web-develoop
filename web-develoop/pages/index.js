@@ -3,13 +3,13 @@
 import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Navbar from "./components/navbar";
-import Hero from "./components/hero3";
-import Hero2 from "./components/hero2";
-import Footer from "./components/footer";
-import Carousel from "./components/carousel-services";
-import CardOrder from "./components/card-order";
-import Circle from "./components/circle-services";
+import Navbar from "../src/app/components/navbar";
+import Hero from "../src/app/components/hero3";
+import Hero2 from "../src/app/components/hero2";
+import Footer from "../src/app/components/footer";
+import Carousel from "../src/app/components/carousel-services";
+import CardOrder from "../src/app/components/card-order";
+import Circle from "../src/app/components/circle-services";
 import Head from "next/head"; // Impor Head dari Next.js
 
 export default function Home({ component, pageProps }) {
