@@ -10,7 +10,6 @@ const handle = app.getRequestHandler();  // Fungsi untuk menangani request Next.
 
 app.prepare().then(() => {
   const server = express();
-  const PORT = 3001;
 
   // Middleware
   server.use(express.json());
@@ -25,7 +24,7 @@ app.prepare().then(() => {
         <h1>Hi, ${name}</h1>
         <p>Permintaan sistem yang Anda perlukan sudah masuk pada sistem kami, harap menunggu tim Develoop menghubungi Anda!</p>
       `;
-    
+  
       // Kirim email
       await sendEmail(email, "PEMBERITAHUAN SISTEM DEVELOOP", html);
 
@@ -36,14 +35,10 @@ app.prepare().then(() => {
     }
   });
 
-  // Semua request ke server Express yang bukan API akan diteruskan ke Next.js
+  // Menangani semua permintaan ke Next.js
   server.all("*", (req, res) => {
-    return handle(req, res);  // Menangani request untuk rendering halaman Next.js
+    return handle(req, res);  
   });
 
-  // Jalankan server Express di port yang diinginkan
-  server.listen(PORT, (err) => {
-    if (err) throw err;
-    console.log(`> Server running on http://localhost:${PORT}`);
-  });
+  // Di Vercel, server tidak perlu mendengarkan port, karena Vercel akan menangani ini secara otomatis.
 });
